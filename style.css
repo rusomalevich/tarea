@@ -18,16 +18,20 @@ a {
 
 .topHeader {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1366px;
     margin: auto;
-    height: 60px;
     margin-top: 20px;
     background-color:var(--blanco);
-    padding: 0 5em;
+    padding: 22px 5em;
     box-sizing: border-box;
+}
+
+.topHeader h1 {
+    margin-top:0;
 }
 
 .navPpal {

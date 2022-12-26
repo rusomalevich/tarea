@@ -1,0 +1,60 @@
+:root {
+    --colorPrimario: #393940;
+    --colorHighlight: #5c54f2;
+    --backWeb:#f5f9fc;
+    --blanco:#fff;
+}
+
+body {
+    margin:0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--backWeb);
+}
+
+a {
+    text-decoration: none;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    height: 60px;
+    margin-top: 20px;
+    background-color:var(--blanco);
+    padding: 0 5em;
+    box-sizing: border-box;
+}
+
+.navPpal {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navPpal a {
+    font-weight: bold;
+    background-color: var(--colorHighlight);
+    color:#fff;
+    letter-spacing: 0.3px;
+}
+
+.btnUser {
+    cursor: pointer;
+    padding: .8em 1.5em;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    font-size: .8em;
+    background: transparent;
+    transition: .5s;
+}
+
+.btnUser:hover {
+    box-shadow: rgb(0 0 0 / 88%) 3px 7px 16px -9px;
+}

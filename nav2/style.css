@@ -1,0 +1,99 @@
+:root {
+    --colorPrimario: #393940;
+    --colorHighlight: #5c54f2;
+    --backWeb:#f5f9fc;
+    --blanco:#fff;
+}
+
+body {
+    margin:0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--backWeb);
+}
+
+a {
+    text-decoration: none;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    height: 60px;
+    margin-top: 20px;
+    background-color:var(--blanco);
+    padding: 0 5em;
+    box-sizing: border-box;
+}
+
+.navPpal {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.navPpal a {
+    font-weight: bold;
+    color:var(--colorPrimario);
+    letter-spacing: 0.3px;
+}
+
+.navPpal a:hover {
+    color:var(--colorHighlight);
+}
+
+.search {
+    width: 23%;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    letter-spacing: .3px;
+    font-size: 1em;
+}
+
+.searchInput::placeholder {
+    color: #7a828a;
+}
+
+.bi-search {
+    color: #5d6370;
+}
+
+.userCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.userImg{
+    width: 40px;
+    height: 40px;
+    border-radius:100%;
+}
+
+.userName{
+    font-weight: bold;
+    position: relative;
+    padding-right: 25px;
+}
+
+.userName::after {
+    width: 45px;
+    height: 45px;
+    content: ">";
+    -webkit-transform: scale(1.7, 1) rotate(90deg);
+    display: inline-block;
+    font-weight: 100;
+    position: absolute;
+    top: 7px;
+    right: 0px;
+}
